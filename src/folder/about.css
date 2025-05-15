@@ -1,0 +1,65 @@
+#about{
+    height: 92.5vh;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #c736a0;
+}
+.content{
+    width:50%;
+    overflow: hidden;
+}
+h1{
+    color: #c736a0;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 80px 80px 0px;
+}
+.listButtons{
+    width: 80px;
+    text-align: center;
+    padding: 8px 10px;
+}
+p,h2,h3{
+    color: white;
+}
+.icons{
+
+    display: flex;
+    justify-content: center;
+}
+#skil {
+    height: 270px;
+    overflow-y: auto; /* Optional: Adds a border for visibility */
+    padding: 0px; /* Optional: Adds some padding for better appearance */
+}
+
+#skil::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#skil::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+#skil::-webkit-scrollbar-thumb:hover {
+    background-color: #123;
+}
+/* For Firefox */
+#skil {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ee2e2e #000 ; /* Firefox */
+}
+
+.selected {
+    background-color: #ee2e2e;
+    color: white;
+    font-weight: lighter;
+    border-radius: 5px;
+  }

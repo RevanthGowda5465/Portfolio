@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+#projects {
+    height: 92.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    width: 55%;
+    height: 60%;
+    display: flex;
+    /* border: 1px solid white; */
+    padding: 20px;
+    background-color: #0f0f0f;
+}
+
+
+
+.project-content {
+    width: 50%;
+    /* display: flex; */
+    align-items: center;
+    padding: 10px;
+}
+
+#project-content-image{
+    display: block;
+}
+#project-no {
+    font-size: 55px;
+    font-family: "Londrina Outline", sans-serif;
+    font-weight: 600;
+    color: #ee2e2e;
+    display: block;
+    padding: 5px 0px;
+}
+
+#project-name{
+    font-size: 28px;
+    padding: 5px 0px;
+}
+
+#project-desc{
+    padding: 5px 0px;
+    margin: 0px;
+    font-weight: 100;
+    font-size: 11px;
+    color: white;
+    text-align: justify;
+}
+
+#project-tech{
+    padding: 5px 0px;
+    margin: 0px;
+    font-weight: bold;
+    color: #ee2e2e;
+}
+
+hr{
+    border: none;         /* Remove default border */
+    height: 1px;          /* Set height */
+    background-color: #c736a0;  
+    width: 98%;
+}
+
+#project-links{
+    padding: 5px 0px;
+    margin: 0px;
+}
+#link{
+    color: #ee2e2e;
+    padding: 0px 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.image {
+    width: 100%;
+    height: 75%;
+}
+
+#project-arrow{  
+    display: flex;
+    justify-content: right;
+}
+
+.arrow-buttons {
+    width: 30px;
+    height: 30px;
+    background-color: #ee2e2e;
+    color: black;
+    border: 1.5px solid #ee2e2e;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 5px;
+    font-size: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}

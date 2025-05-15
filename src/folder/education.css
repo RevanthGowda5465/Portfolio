@@ -1,0 +1,19 @@
+h5,h4{
+    color: white;
+    margin: 5px;
+    padding:0px;
+}
+#year{
+    color: #656b6b;
+    padding-left: 5px;
+    font-size: 10px;
+}
+.education{
+    background-color: #111;
+    border-radius:7px ;
+    padding: 10px 10px;
+    margin: 20px;
+    width: 235px;
+    height: 80px;
+    align-content: center;
+}

@@ -1,0 +1,79 @@
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 92.5vh; 
+    color:#c736a0;
+    /* border: 1px solid white; */
+} 
+.container-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 7%;
+}
+.container{
+    width: 43%;
+    padding: 15px;
+    align-content: center;
+}
+.socials{
+    width: 18px;
+    height: 18px;
+    padding: 10px;
+    background-color: none;
+}
+.socials-links{
+    color: #ee2e2e;
+}
+h1{
+    padding: 10px 0px ;
+    margin: 0px;
+    font-size: 2.5em;
+    display: inline;
+}
+h2{
+    padding: 10px 0px ;
+    margin: 0px;
+    font-size: 1.5em;
+    display: inline;
+}
+#robot{
+    width: 100px;
+    height: 100px;
+}
+p{
+    font-size: 14px;
+    text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#span{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+button{
+    text-align: center;
+    align-content: center;
+    padding: 8.5px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 10px;
+    background-color: #000;
+    color: #ee2e2e;
+    border: 1px solid #ee2e2e;
+}
+button:hover {
+    color: white;
+    background-color:#ee2e2e;
+}
+button:active{
+  background-color: transparent; /* Removes the active background color */
+  outline: none; /* Removes outline if it stays on click */
+}
+button:disabled:hover {
+  background-color: transparent;  /* No background color change when loading */
+  cursor: not-allowed;  /* Changes the cursor to indicate the button is disabled */
+}

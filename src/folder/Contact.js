@@ -3,9 +3,10 @@ import { IoIosCall } from "react-icons/io";
 import { IoIosMail } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
 import './contact.css'
+import emailjs from 'emailjs-com';
 
 function Contact() {
-  
+
   const [fname, setFname] = useState()
   const [lname, setLname] = useState()
   const [email, setEmail] = useState()
@@ -13,28 +14,43 @@ function Contact() {
   const [message, setMessage] = useState()
   const [button, setButton] = useState('Send Message')
   const [isLoading, setIsLoading] = useState(false);
-  
+
   let handelSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     setIsLoading(true);
     setButton('Sending...');
-    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    console.log(fname, lname, email, phoneNo, message)
+    const templateParams = {
+      from_name: `${fname} ${lname}`,
+      email: email,
+      phone: phoneNo,
+      message: message,
+    };
 
-    setEmail('');
-    setFname('');
-    setLname('');
-    setMessage('')
-    setPhoneNo('');
-    alert("Thank you for your message! I’ll be in touch shortly.")
-    
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        'service_5ig9354',      // Your Service ID
+        'template_vn4x1hx',     // Your Template ID
+        templateParams,
+        'LhAUHVE7i4eibnGFm'       // Your Public Key
+      );
+
+      alert("Thank you for your message! I’ll be in touch shortly.");
+      setFname('');
+      setLname('');
+      setEmail('');
+      setPhoneNo('');
+      setMessage('');
+      setButton('Sent');
+    } catch (error) {
+      console.error('Email send error:', error);
+      alert("Something went wrong. Please try again later.");
       setButton('Send Message');
+    } finally {
       setIsLoading(false);
-    }, 100);
-    setButton('Sent');
-  }
+    }
+  };
+
   return (
     <div id="contact">
       <div className='form' id='form'>
@@ -43,15 +59,15 @@ function Contact() {
             <h2 id="heading">Let's Connect</h2>
             <p id="paragraph">Open to new opportunities in tech — especially roles in full-stack or backend development. Don’t hesitate to reach out if you’re hiring.</p>
             <input className="input-field left-inputfield" type='text' placeholder='First Name' value={fname} onChange={(e) => setFname(e.target.value)} required></input>
-            <input className="input-field right-inputfield" type='text' placeholder='Last Name' value={lname} onChange={(e) => setLname(e.target.value)}></input>
+            <input className="input-field right-inputfield" type='text' placeholder='Last Name' value={lname} onChange={(e) => setLname(e.target.value)} required></input>
             <br />
             <input className="input-field left-inputfield" type='email' placeholder='Email Address' value={email} onChange={(e) => setEmail(e.target.value)} required></input>
-            <input className="input-field right-inputfield" type='tel' placeholder='Phone Number' value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} required></input>
+            <input className="input-field right-inputfield" type='tel' placeholder='Phone Number' value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} ></input>
             <br />
             <textarea rows={5} className="input-field" type='text' placeholder='Type your message here.' value={message} onChange={(e) => setMessage(e.target.value)} id="message-field" required></textarea>
             <br />
 
-            <button type='submit' disabled={isLoading}> {isLoading ? ( <p id="contact-button"> <span className="spinner"></span> Sending... </p> ) : ( button )} </button>
+            <button type='submit' disabled={isLoading}> {isLoading ? (<p id="contact-button"> <span className="spinner"></span> Sending... </p>) : (button)} </button>
           </form>
         </div>
       </div>

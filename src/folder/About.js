@@ -64,23 +64,23 @@ function About() {
         setSelectedSection('hobbies')
         setAboutContent(
             <section id="hobbies" className="p-6 bg-white rounded-xl shadow-md">
-  <h2 className="text-2xl font-bold mb-6">Hobbies & Interests</h2>
+
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg">
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 hobbies-container">
       <FaFutbol className="text-blue-500" />
-      <span>Playing Sports (especially Cricket)</span>
+      <p className='hobbies-list'> Playing Sports</p>
     </div>
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 hobbies-container">
       <FaFilm className="text-red-500" />
-      <span>Watching Movies (Sci-Fi & Action)</span>
+      <p className='hobbies-list'> Watching Movies </p>
     </div>
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 hobbies-container">
       <FaPlane className="text-green-500" />
-      <span>Traveling and Exploring New Places</span>
+      <p className='hobbies-list'> Traveling and Exploring New Places</p>
     </div>
-    <div className="flex items-center space-x-3">
+    <div className="flex items-center space-x-3 hobbies-container">
       <FaLaptopCode className="text-purple-500" />
-      <span>Learning New Technical Skills</span>
+      <p className='hobbies-list'> Learning New Technical Skills</p> 
     </div>
   </div>
 </section>

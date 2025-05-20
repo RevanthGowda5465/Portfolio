@@ -6,6 +6,13 @@
     color:#c736a0;
     /* border: 1px solid white; */
 } 
+
+.main-container{
+    width: 100%;
+    display: flex;
+    height: 92.5vh; 
+    color:#c736a0;
+}
 .container-links{
     display: flex;
     flex-direction: column;
@@ -15,7 +22,7 @@
     width: 7%;
 }
 .container{
-    width: 43%;
+    width: 100%;
     padding: 15px;
     align-content: center;
 }

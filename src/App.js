@@ -5,7 +5,6 @@ import Contact from './folder/Contact';
 import MainContent from './folder/MainContent';
 import Nav from './folder/Nav';
 import Projects from './folder/Projects';
-import Skills from './folder/Skills';
 
 function App() {
   return (

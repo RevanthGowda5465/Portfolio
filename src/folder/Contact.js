@@ -29,10 +29,10 @@ function Contact() {
 
     try {
       await emailjs.send(
-        'service_5ig9354',      // Your Service ID
-        'template_vn4x1hx',     // Your Template ID
+        'service_5ig9354',      
+        'template_vn4x1hx',     
         templateParams,
-        'LhAUHVE7i4eibnGFm'       // Your Public Key
+        'LhAUHVE7i4eibnGFm'     
       );
 
       alert("Thank you for your message! I’ll be in touch shortly.");

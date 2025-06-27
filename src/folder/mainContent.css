@@ -4,7 +4,6 @@
     width: 100%;
     height: 92.5vh; 
     color:#c736a0;
-    /* border: 1px solid white; */
 } 
 
 .main-container{
@@ -77,10 +76,10 @@ button:hover {
     background-color:#ee2e2e;
 }
 button:active{
-  background-color: transparent; /* Removes the active background color */
-  outline: none; /* Removes outline if it stays on click */
+    background-color: transparent; 
+    outline: none; 
 }
 button:disabled:hover {
-  background-color: transparent;  /* No background color change when loading */
-  cursor: not-allowed;  /* Changes the cursor to indicate the button is disabled */
+  background-color: transparent;  
+  cursor: not-allowed;
 }

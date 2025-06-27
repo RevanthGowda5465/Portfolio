@@ -11,7 +11,6 @@
     width: 55%;
     height: 60%;
     display: flex;
-    /* border: 1px solid white; */
     padding: 20px;
     background-color: #0f0f0f;
 }
@@ -59,8 +58,8 @@
 }
 
 hr{
-    border: none;         /* Remove default border */
-    height: 1px;          /* Set height */
+    border: none;        
+    height: 1px;         
     background-color: #c736a0;  
     width: 98%;
 }

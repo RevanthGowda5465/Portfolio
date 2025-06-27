@@ -13,8 +13,8 @@ function Projects() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % project.length);
-    }, 3000); // 3000 ms = 3 seconds
-    return () => clearInterval(interval); // Cleanup on unmount
+    }, 3000); 
+    return () => clearInterval(interval); 
   }, []);
   const goNext = () => {
     if (!project || project.length === 0) return;

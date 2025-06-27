@@ -54,7 +54,7 @@ label{
 
 .input-field{
     width: 42.1%;
-    background-color: black;/*#0f0f0f;*/
+    background-color: black;
     border: none;
     padding: 10px;
     border-radius: 3px;
@@ -82,7 +82,6 @@ label{
 #message-field{
     resize: none;
     width:94.3%;
-    /* height: 50px; */
     margin: 10px 0px 15px;
     overflow-y: auto;
 }

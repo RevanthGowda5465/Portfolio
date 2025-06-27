@@ -16,8 +16,8 @@ function MainContent() {
   }, []);
   const handelButton = () => { 
         const element = document.createElement('a');
-        element.href = '/Documents/Revanth_Gowda_R_Java_FullStack.pdf'; // Path to your PDF file in the public directory
-        element.download = 'Revanth_Gowda_R_Java_FullStack.pdf'; // Desired filename
+        element.href = '/Documents/Revanth_Gowda_R_Java_FullStack.pdf'; 
+        element.download = 'Revanth_Gowda_R_Java_FullStack.pdf'; 
         document.body.appendChild(element);
         element.click();
         document.body.removeChild(element);

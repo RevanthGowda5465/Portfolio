@@ -41,8 +41,8 @@ p,h2,h3{
 }
 #skil {
     height: 270px;
-    overflow-y: auto; /* Optional: Adds a border for visibility */
-    padding: 0px; /* Optional: Adds some padding for better appearance */
+    overflow-y: auto; 
+    padding: 0px; 
 }
 
 #skil::-webkit-scrollbar-track {
@@ -59,8 +59,8 @@ p,h2,h3{
 }
 /* For Firefox */
 #skil {
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #ee2e2e #000 ; /* Firefox */
+    scrollbar-width: thin; 
+    scrollbar-color: #ee2e2e #000 ;
 }
 
 .selected {

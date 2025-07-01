@@ -76,3 +76,20 @@ a:hover::after {
     background-color: #ee2e2e;
     border-radius: 20px; 
 }
+
+
+
+@media (max-width:470px){
+    #logo {
+        width: 60px;
+        height: 20px;
+        padding-top: 3px;
+    }
+
+    header{
+        padding: 0px 10px;
+    }
+    
+    
+
+}

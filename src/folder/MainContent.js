@@ -24,8 +24,8 @@ function MainContent() {
   }
   return (
     <div id='main'>
-      <div className="main-container">
-        <div className='container-links'>
+      <div className="main-container" id='content-container'>
+        <div className='container-links' >
           <a href='https://www.linkedin.com/in/revanth-gowda-r-251443319' target='_blank' className='social-links'><IoLogoLinkedin className="socials" /></a>
           <a href='mailto:revanthgowdar5465@gmail.com' target='_blank' className='social-links'><IoIosMail className="socials" /></a>
           <a href='https://github.com/RevanthGowda5465' target='_blank' className='social-links'><FaGithub className="socials" /></a>
@@ -42,12 +42,10 @@ function MainContent() {
             With a strong foundation in <strong>Java Full-Stack Development </strong>
             and a love for solving real-world problems, I blend logic and creativity to build smooth digital experiences.
           </p>
-          <button onClick={handelButton}>Download CV</button>
+          <div id='button-center'><button onClick={handelButton}>Download CV</button></div>
         </div>
       </div>
-      <div className="main-container">
-        <Spline scene="https://prod.spline.design/W9LLmD49K91NmguB/scene.splinecode" />
-      </div>
+      <Spline scene="https://prod.spline.design/W9LLmD49K91NmguB/scene.splinecode" className="robot"/>
     </div>
   )
 }

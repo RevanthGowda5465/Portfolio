@@ -9,7 +9,7 @@
 
 .project-container {
     width: 55%;
-    height: 60%;
+    height: auto;
     display: flex;
     padding: 20px;
     background-color: #0f0f0f;

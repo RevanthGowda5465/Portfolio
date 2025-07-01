@@ -4,6 +4,7 @@
     width: 100%;
     height: 92.5vh; 
     color:#c736a0;
+    justify-content: center;
 } 
 
 .main-container{
@@ -46,10 +47,7 @@ h2{
     font-size: 1.5em;
     display: inline;
 }
-#robot{
-    width: 100px;
-    height: 100px;
-}
+
 p{
     font-size: 14px;
     text-align: justify;
@@ -59,6 +57,9 @@ p{
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
+}
+.robot{
+    width: 50%;
 }
 button{
     text-align: center;
@@ -82,4 +83,115 @@ button:active{
 button:disabled:hover {
   background-color: transparent;  
   cursor: not-allowed;
+}
+
+/*Mobile*/
+@media (max-width:470px){
+    .robot{
+        
+        scale: 0.5;
+        overflow: visible !important;
+        position: relative;
+        top: -60%;
+        right: 25%;
+    }
+    .container{
+        width: auto;
+        position: relative;
+        top: 130%;
+    }
+    .container-links{
+        padding: 5px;
+        position: relative;
+        top: 130%;
+        right: -45%;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .main-container{
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    h1{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 10px;
+    }
+    #span{
+        font-size: 15px;
+    }
+    #button-center{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        padding: 7px 18px;
+    }
+    .socials{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (min-width:471px) and (max-width:767px){
+    
+    .robot{
+        overflow: visible !important;
+        scale: 0.7;
+        position: relative;
+        top: -50%;
+    }
+    .container{
+        padding-right: 10%;
+        position: relative;
+        top: 185%;
+    }
+    .container-links{
+        position: relative;
+        top: 125%;
+        padding: 5px;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{ 
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 10px;
+    }
+    #span{
+        font-size: 15px;
+    }
+    #button-center{
+        display: flex;
+        justify-content: center;
+    }
+    button{
+        padding: 7px 18px;
+        margin-top: 15px;
+    }
+    .socials{
+        width: 16px;
+        height: 16px;
+    }
 }

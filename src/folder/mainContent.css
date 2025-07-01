@@ -1,12 +1,10 @@
-
 #main{
     display: flex;
     width: 100%;
     height: 92.5vh; 
     color:#c736a0;
     justify-content: center;
-} 
-
+}
 .main-container{
     width: 100%;
     display: flex;
@@ -59,7 +57,12 @@ p{
     font-weight: bold;
 }
 .robot{
-    width: 50%;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+#d-model{
+    height: auto;
 }
 button{
     text-align: center;
@@ -81,19 +84,17 @@ button:active{
     outline: none; 
 }
 button:disabled:hover {
-  background-color: transparent;  
-  cursor: not-allowed;
+background-color: transparent;  
+cursor: not-allowed;
 }
 
-/*Mobile*/
 @media (max-width:470px){
-    .robot{
-        
-        scale: 0.5;
+    .robot{       
+        scale: 0.6;
         overflow: visible !important;
         position: relative;
-        top: -60%;
-        right: 25%;
+        top: -70%;
+        right: 18%;
     }
     .container{
         width: auto;
@@ -120,16 +121,14 @@ button:disabled:hover {
         flex-direction: column;
         justify-content: center;
     }
-
-
     h1{
         font-size: 1.5em;
     }
     h2{
-        font-size: 1em;
+        font-size: 1.1em;
     }
     p{
-        font-size: 10px;
+        font-size: 14px;
     }
     #span{
         font-size: 15px;
@@ -148,8 +147,7 @@ button:disabled:hover {
     }
 }
 
-@media (min-width:471px) and (max-width:767px){
-    
+@media (min-width:470px) and (max-width:767px) {
     .robot{
         overflow: visible !important;
         scale: 0.7;
@@ -193,5 +191,20 @@ button:disabled:hover {
     .socials{
         width: 16px;
         height: 16px;
+    }
+}
+@media (min-width:767px)and (max-width:1280px) and (max-height:830px){
+    .robot{
+        position: relative;
+        top: 10%;
+    }
+    .container-links{
+        padding: 10px;
+    }
+}
+@media (min-width:1280px){
+    .robot{
+        position: relative;
+        top: 8%;
     }
 }

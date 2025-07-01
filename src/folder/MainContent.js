@@ -45,7 +45,9 @@ function MainContent() {
           <div id='button-center'><button onClick={handelButton}>Download CV</button></div>
         </div>
       </div>
+      <div id="d-model">
       <Spline scene="https://prod.spline.design/W9LLmD49K91NmguB/scene.splinecode" className="robot"/>
+      </div>
     </div>
   )
 }

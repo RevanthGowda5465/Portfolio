@@ -79,7 +79,7 @@ a:hover::after {
 
 
 
-@media (max-width:470px){
+@media (max-width:767px){
     #logo {
         width: 60px;
         height: 20px;
